@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add custom styles here */
+    
+    /* Custom CSS for hover effects */
+    .navbar-nav .nav-link {
+      position: relative;
+      transition: color 0.3s;
+      text-transform: uppercase;
+      color: black;
+
+    }
+    .navbar-nav .nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #007bff;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+    .navbar-nav .nav-link:hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+    .nav-item
+    {
+        padding-left: 50px;
+    }
+    .social-icons {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .social-icons a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+    .section1
+    {
+        height: 100%;
+    }
+    .section1 img
+    {
+        width: 100%;
+        height: fit-content;
+      object-fit: cover;
+      
+    }
+    .navbar-brand
+    {
+        text-transform: initial;
+        font-weight: bold;
+        color: green;
+        font-style: italic;
+        font-size: 25px;
+    }
+    .navbar-brand 
+    {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    }
+    .img2 img{
+        max-width: 100%;
+        height: 100%;
+      object-fit: cover;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .footer p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <div class="container header justify-content-center">
+        <a class="navbar-brand" href="#">DipanKar MultiMedia</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="section1">
+    <img src="Image/img1.jpg" alt="img1">
+  </div>
+  <br>
+  <div class="section2">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 img2">
+            
+            <img src="Image/img2.webp" alt=""/>
+
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <h1><b>About Me</b></h1>
+            <p>
+                Welcome to my photography portfolio! My name is Dipankar, and I am a passionate photographer based in [Your Location]. I specialize in capturing moments that tell unique stories, whether it's through weddings, portraits, landscapes, or events.
+Photography has always been more than just a profession for me; it's a way of life. I find joy and inspiration in every click of the shutter, constantly seeking to freeze moments in time that evoke emotion and nostalgia.
+            </p>
+            
+
+        </div>
+
+
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="Image/img1.jpg" alt="Image 1">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="Image/img2.webp" alt="Image 2">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800113623.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800116651.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800119555.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800122205.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800124826.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800127443.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800129883.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800132461.jpg" alt="Image 2">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800147136.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800149314.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800155059.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800149314.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800155059.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800155059.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800182272.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800184899.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800187776.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800190449.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="gallery-item">
+              <img src="Image/FB_IMG_1708800205385.jpg" alt="Image 2">
+            </div>
+          </div>
+
+
+          <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Contact Information</h5>
+                  <p>Email: dipankar0145@gmail.com</p>
+                  <p>Phone: 8250776161</p>
+                  <p>Kaliachak,Malda,West Bengal 732216</p>
+                </div>
+                <div class="col-md-6">
+                  <h5>Follow Me</h5>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-12">
+                  <p>&copy; 2024 Photographer Portfolio</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+  </div>
+  
+ <!-- Social Icons -->
+ <div class="social-icons">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fmXK4E3l2qZlBBp6TCeLtyStaAfz6w/sTQrj/rUc3MRHaz/gBSQVjWqDdWt4c4nF" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
